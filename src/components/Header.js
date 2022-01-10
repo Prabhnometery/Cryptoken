@@ -4,7 +4,7 @@ import React from "react";
 import "./Header.css";
 import punkLogo from "../assets/header/cryptopunk-logo.png";
 import searchIcon from "../assets/header/search.png";
-import switchIcon from "../assets/header/theme-switch.png"
+import switchIcon from "../assets/header/theme-switch.png";
 
 const Header = () => {
   return (
@@ -27,15 +27,12 @@ const Header = () => {
       </div>
 
       <div className="headerActions">
-          <div className="themeSwitchContainer">
-              <img src={switchIcon} />
-          </div>
-
+        <div className="themeSwitchContainer">
+          <img src={switchIcon} />
+        </div>
       </div>
 
-      <div className="loginButton">
-          GET IN 
-      </div>
+      <div className="loginButton">GET IN</div>
     </div>
   );
 };
