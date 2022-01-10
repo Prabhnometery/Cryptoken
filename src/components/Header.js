@@ -1,12 +1,32 @@
-import React from 'react'
+import React from "react";
+
+// Style
+import "./Header.css";
+import punkLogo from "../assets/header/cryptopunk-logo.png";
+import searchIcon from "../assets/header/search.png";
 
 const Header = () => {
-    return (
-        <div>
-            <h2>I am the Header</h2>
-            
-        </div>
-    )
-}
+  return (
+    <div className="header">
+      <div className="logoContainer">
+        <img src={punkLogo} className="punkLogo" alt="" />
+      </div>
 
-export default Header
+      <div className="searchBar">
+        <div className="searchIconContainer">
+          <img src={searchIcon} />
+        </div>
+        <input className="searchInput" placeholder="Search Punks" />
+      </div>
+
+      <div className="headerItems">
+          <p>Drops</p>
+          <p>Marketplace</p>
+          <p>Create</p>
+
+      </div>
+    </div>
+  );
+};
+
+export default Header;
