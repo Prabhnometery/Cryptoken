@@ -1,12 +1,12 @@
 import React from "react";
 
 import CollectionCard from "./CollectionCard";
-import './PunkList.css'
+import "./PunkList.css";
 
 const PunkList = ({ punkListData }) => {
   return (
     <div className="PunkList">
-      {punkListData.map(punk => (
+      {punkListData.map((punk) => (
         <div>
           <CollectionCard
             key={punk.token_id}

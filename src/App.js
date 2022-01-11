@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 
 // Import Components
 import Header from "./components/Header";
-import CollectionCard from "./components/CollectionCard";
 import PunkList from "./components/PunkList";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
   useEffect(() => {
     const getMyNfts = async () => {
       const openSeaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0xFc129B9daffBB97464488c12664593c3632df8DF"
+        "https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0xFc129B9daffBB97464488c12664593c3632df8DF"
       );
       console.log(openSeaData.data.assets);
       setPunkListData(openSeaData.data.assets);
@@ -26,12 +25,6 @@ function App() {
   return (
     <div className="app">
       <Header />
-      {/* <CollectionCard
-        id={0}
-        name={"Bandana Punk"}
-        traits={[{ value: 7 }]}
-        image={""}
-      /> */}
       <PunkList punkListData={punkListData} />
     </div>
   );
