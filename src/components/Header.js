@@ -2,6 +2,8 @@ import React from "react";
 
 // Style
 import "./Header.css";
+
+// Assets
 import punkLogo from "../assets/header/cryptopunk-logo.png";
 import searchIcon from "../assets/header/search.png";
 import switchIcon from "../assets/header/theme-switch.png";
