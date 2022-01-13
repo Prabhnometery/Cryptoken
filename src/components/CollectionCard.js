@@ -1,5 +1,6 @@
 import React from "react";
 
+// Style
 import "./CollectionCard.css";
 
 // Assests
